@@ -16,6 +16,7 @@ public class Theme : ScriptableObject
     [SerializeField] Color primaryColor;
     [SerializeField] Color secondaryColor;
     [SerializeField] Color backgroundColor;
+    [SerializeField] Color buttonBackgroundColor;
     [SerializeField] Color textColorDefault;
     [SerializeField] Color hoverTextColor;
     [SerializeField] Color textColorBlack;
@@ -61,6 +62,7 @@ public class Theme : ScriptableObject
     public Color PrimaryColor => primaryColor;
     public Color SecondaryColor => secondaryColor;
     public Color BackgroundColor => backgroundColor;
+    public Color ButtonBackgroundColor => ButtonBackgroundColor;
     public Color TextColorDefault => textColorDefault;
     public Color HoverTextColor => hoverTextColor;
     public Color TextColorBlack => textColorBlack;

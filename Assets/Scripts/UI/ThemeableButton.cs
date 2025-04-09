@@ -11,10 +11,16 @@ public class ThemeableButton : MonoBehaviour, IThemeable
     public void ApplyTheme(Theme theme)
     {
         if(theme == null) return;
-        buttonImage.color = Color.white;
-        buttonText.color = theme.TextColorDefault;
-        buttonText.fontSize = theme.TextSizeDefault;
-        buttonText.font = theme.DefaultFontTMP;
+        if(buttonImage != null)
+            buttonImage.color = theme.ButtonBackgroundColor;
+
+        if(buttonText != null)
+        {
+            buttonText.color = theme.TextColorDefault;
+            buttonText.fontSize = theme.TextSizeDefault;
+            buttonText.font = theme.DefaultFontTMP;
+        }
+        
     }
 
     void OnEnable()

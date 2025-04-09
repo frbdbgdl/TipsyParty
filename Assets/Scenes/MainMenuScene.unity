@@ -183,7 +183,6 @@ GameObject:
   - component: {fileID: 118905059}
   - component: {fileID: 118905061}
   - component: {fileID: 118905060}
-  - component: {fileID: 118905062}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -248,21 +247,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118905058}
   m_CullTransparentMesh: 1
---- !u!114 &118905062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118905058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1372d7db8221b7488563c984ad432b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  useOverrides: 0
-  overrideBackgroundColor: {r: 0.3882353, g: 0.69803923, b: 0.92156863, a: 1}
-  backgroundColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &146488224
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,6 +299,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1629190642}
     m_Modifications:
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 146488226}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnCreateGameClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 549788876793550249, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
       propertyPath: m_text
       value: Spiel erstellen
@@ -411,7 +411,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CreateGameButton
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -566,6 +567,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1629190642}
     m_Modifications:
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 146488226}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnQuitGameClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 549788876793550249, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
       propertyPath: m_text
       value: Verlassen
@@ -990,54 +1007,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 73522905}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &837034966
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 837034968}
-  - component: {fileID: 837034967}
-  m_Layer: 0
-  m_Name: ThemeManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &837034967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837034966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c4034eaf2546641843a178e40cebb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theme: {fileID: 11400000, guid: a1fb2dbc14cbe8d47b7e70cd4d383581, type: 2}
-  fallbackTheme: {fileID: 11400000, guid: a1fb2dbc14cbe8d47b7e70cd4d383581, type: 2}
-  themes:
-  - {fileID: 11400000, guid: a1fb2dbc14cbe8d47b7e70cd4d383581, type: 2}
---- !u!4 &837034968
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837034966}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 548.11536, y: 241.92271, z: -0.3465538}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962609109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,6 +1352,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1629190642}
     m_Modifications:
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 146488226}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnJoinGameClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 549788876793550249, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
       propertyPath: m_text
       value: Spiel beitreten
@@ -1576,6 +1561,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1629190642}
     m_Modifications:
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 146488226}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSettingsClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: -6928516263133909931, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 549788876793550249, guid: 2b98b19cac1000944a0235184a51601e, type: 3}
       propertyPath: m_text
       value: Einstellungen
@@ -2252,7 +2253,6 @@ SceneRoots:
   - {fileID: 1347409519}
   - {fileID: 146488225}
   - {fileID: 1520568019}
-  - {fileID: 837034968}
   - {fileID: 73522905}
   - {fileID: 1245476472}
   - {fileID: 1798283714}
